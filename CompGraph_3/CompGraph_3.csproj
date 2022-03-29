@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Evgeniy\.nuget\packages\oo.presentation\1.7.32\contentFiles\any\net6.0\Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="MediaPlayer">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>22d6f304-b0f6-11d0-94ab-0080c74c7e95</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ILNumerics.Computing" Version="6.0.127" />
+    <PackageReference Include="ILNumerics.Core" Version="6.0.127" />
+    <PackageReference Include="ILNumerics.Core.Platforms" Version="6.0.127" />
+    <PackageReference Include="ILNumerics.Drawing" Version="6.0.127" />
+    <PackageReference Include="ILNumerics.numpy" Version="6.0.127" />
+    <PackageReference Include="ILNumerics.Toolboxes.Drawing2" Version="6.0.127" />
+    <PackageReference Include="Maikebing.System.Windows.Forms.DataVisualization" Version="5.0.1" />
+    <PackageReference Include="OO.Presentation" Version="1.7.32" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <HintPath>..\..\..\..\Desktop\VSNuggets\PresentationCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
